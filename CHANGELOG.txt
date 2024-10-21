@@ -5,6 +5,7 @@ Changelog
 ~~~~~~~~~~~~~~~~
 
  * Add formal support for Django 5.1 (Matt Westcott)
+ * Add `ImageBlock` with alt text support (Chiemezuo Akujobi for Google Summer of Code, mentored by Storm Heg, Saptak Sengupta, Thibaud Colas and Matt Westcott)
  * Formalize support for MariaDB (Sage Abdullah, Daniel Black)
  * Redirect to the last viewed listing page after deleting form submissions (Matthias Brück)
  * Provide `getTextLabel` method on date / time StreamField blocks (Vaughn Dickson)
@@ -28,6 +29,7 @@ Changelog
  * Secondary form actions such as "Delete" are now in the header actions menu (Sage Abdullah)
  * Add support for uploading HEIC / HEIF images (Matt Westcott)
  * Allow customization of preview device sizes in the live preview panel (Bart Cieliński, alexkiro, Sage Abdullah)
+ * Allow setting page privacy rules when a restriction already exists on an ancestor page (Bojan Mihelac)
  * Fix: Prevent page type business rules from blocking reordering of pages (Andy Babic, Sage Abdullah)
  * Fix: Improve layout of object permissions table (Sage Abdullah)
  * Fix: Fix typo in aria-label attribute of page explorer navigation link (Sébastien Corbin)
@@ -49,6 +51,7 @@ Changelog
  * Fix: Footer action buttons now include their `media` definitions (Sage Abdullah)
  * Fix: Improve the text contrast of the bulk actions "Select all" button (Sage Abdullah)
  * Fix: Fix error on workflow settings view with multiple snippet types assigned to the same workflow on Postgres (Sage Abdullah)
+ * Fix: Fix datetime fields overflowing its parent wrapper in listing filters (Rohit Singh)
  * Docs: Upgrade Sphinx to 7.3 (Matt Westcott)
  * Docs: Document how to customize date/time format settings (Vince Salvino)
  * Docs: Create a new documentation section for deployment and move fly.io deployment from the tutorial to this section (Vince Salvino)
@@ -154,6 +157,7 @@ Changelog
  * Fix: Ensure that system checks for `WAGTAIL_DATE_FORMAT`, `WAGTAIL_DATETIME_FORMAT` and `WAGTAIL_TIME_FORMAT` take `FORMAT_MODULE_PATH` into account (Sébastien Corbin)
  * Fix: Prevent rich text fields inside choosers from being duplicated when opened repeatedly (Sage Abdullah)
  * Fix: Prevent history view from breaking if a log entry's revision is missing (Matt Westcott)
+ * Fix: Prevent long filenames from breaking layout on document chooser listings (Frank Yiu, Shaurya Panchal)
  * Docs: Remove duplicate section on frontend caching proxies from performance page (Jake Howard)
  * Docs: Document `restriction_type` field on PageViewRestriction (Shlomo Markowitz)
  * Docs: Document Wagtail's bug bounty policy (Jake Howard)
