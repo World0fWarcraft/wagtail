@@ -1,6 +1,12 @@
 Changelog
 =========
 
+6.4 (xx.xx.xxxx) - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~
+
+ * Fix: Improve handling of translations for bulk page action confirmation messages (Matt Westcott)
+
+
 6.3 LTS (xx.xx.xxxx) - IN DEVELOPMENT
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -32,6 +38,7 @@ Changelog
  * Secondary form actions such as "Delete" are now in the header actions menu (Sage Abdullah)
  * Allow setting page privacy rules when a restriction already exists on an ancestor page (Bojan Mihelac)
  * Automatically create links when pasting content that contain URLs into a rich text input (Thibaud Colas)
+ * Add Uyghur language support
  * Fix: Prevent page type business rules from blocking reordering of pages (Andy Babic, Sage Abdullah)
  * Fix: Improve layout of object permissions table (Sage Abdullah)
  * Fix: Fix typo in aria-label attribute of page explorer navigation link (Sébastien Corbin)
@@ -64,6 +71,7 @@ Changelog
  * Docs: Correct `WAGTAIL_WORKFLOW_REQUIRE_REAPPROVAL_ON_EDIT` documentation to state that it defaults to `False` (Matt Westcott)
  * Docs: Add an example of customizing a default accessibility check (Cynthia Kiser)
  * Docs: Demonstrate access protection with `TokenAuthentication` in the Wagtail API v2 Configuration Guide (Krzysztof Jeziorny)
+ * Docs: Replace X links with Mastodon in the README (Alex Morega)
  * Maintenance: Removed support for Python 3.8 (Matt Westcott)
  * Maintenance: Drop pytz dependency in favour of `zoneinfo.available_timezones` (Sage Abdullah)
  * Maintenance: Relax django-taggit dependency to allow 6.0 (Matt Westcott)
@@ -86,6 +94,12 @@ Changelog
  * Maintenance: Remove `image_format_name_to_content_type` helper function that duplicates Willow functionality (Matt Westcott)
  * Maintenance: Improve code reuse for footer actions markup across generic views (Sage Abdullah)
  * Maintenance: Deprecate internal `DeleteMenuItem` API for footer actions (Sage Abdullah)
+
+
+6.2.3 (xx.xx.xxxx) - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~
+
+ * Fix: Prevent multiple URLs from being combined into one when pasting links into a rich text input (Thibaud Colas)
 
 
 6.2.2 (24.09.2024)
@@ -541,6 +555,12 @@ Changelog
  * Maintenance: Use Django's `FileResponse` when serving files such as Images or Documents (Jake Howard)
  * Maintenance: Deprecated `WidgetWithScript` base widget class (LB (Ben) Johnston)
  * Maintenance: Remove support for Django 4.1 and below (Sage Abdullah)
+
+
+5.2.7 (xx.xx.xxxx) - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~
+
+ * Fix: Prevent multiple URLs from being combined into one when pasting links into a rich text input (Thibaud Colas)
 
 
 5.2.6 (11.07.2024)
